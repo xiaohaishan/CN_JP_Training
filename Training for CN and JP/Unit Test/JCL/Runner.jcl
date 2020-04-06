@@ -23,10 +23,10 @@ ${TOTALTEST_JOBCARD}
 //* loadlib containing the COBOL runtime(CEE.SCEERUN), otherwise 
 //* it can be removed.
 //*
-//STEPLIB DD DISP=SHR,DSN=CPWR.MLCXnnn.SLCXLOAD
+//STEPLIB DD DISP=SHR,DSN=SYS2.CW.&CWGACX..SLCXLOAD
 //*  where MLCXnnn is MLCX170 OR HIGHER
-//        DD DISP=SHR,DSN=<ADD LOADLIB CONTAINING COBOL TEST PROGRAM>
-//*       DD DISP=SHR,DSN=<COBOL RUNTIME LOADLIB>
+//        DD DISP=SHR,DSN=SALESSUP.GXM1.PRD.LOAD
+//        DD DISP=SHR,DSN=CEE.SCEERUN
 //*
 //* The following lines will initialize storage to zeroes to avoid 
 //* uninitialized storage assertion miscompares.
